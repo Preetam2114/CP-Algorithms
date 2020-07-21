@@ -1,13 +1,13 @@
 # CP-Algorithms
-CP-ALgo
+https://cp-algorithms.com
 
 ### Algebra
 * Fundamentals
-    - [ ] Linear Diophantine Equations
-    - [ ] Extended Euclidean Algorithm
-    - [ ] Fibonacci Numbers
-    - [ ] Euclidean algorithm for computing the greatest common divisor
     - [x] Binary Exponentiation
+    - [ ] Euclidean algorithm for computing the greatest common divisor
+    - [ ] Extended Euclidean Algorithm
+    - [ ] Linear Diophantine Equations
+    - [ ] Fibonacci Numbers
 * Prime numbers
     - [ ] Sieve of Eratosthenes
     - [ ] Sieve of Eratosthenes With Linear Time Complexity
