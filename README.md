@@ -5,7 +5,7 @@ https://cp-algorithms.com
 * Fundamentals
     - [x] Binary Exponentiation
     - [x] Euclidean algorithm for computing the greatest common divisor
-    - [ ] Extended Euclidean Algorithm
+    - [x] Extended Euclidean Algorithm
     - [ ] Linear Diophantine Equations
     - [ ] Fibonacci Numbers
 * Prime numbers
