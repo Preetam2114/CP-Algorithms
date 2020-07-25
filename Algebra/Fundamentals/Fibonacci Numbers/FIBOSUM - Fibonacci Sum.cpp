@@ -5,7 +5,6 @@
  * Author: preetam rane
  */
 
-
 #include<stdio.h>
 using namespace std;
 
@@ -59,6 +58,5 @@ int main(){
             }
             printf("%lld\n", result);
         }
-    }
     return 0;
 }
