@@ -6,8 +6,8 @@ https://cp-algorithms.com
     - [x] Binary Exponentiation
     - [x] Euclidean algorithm for computing the greatest common divisor
     - [x] Extended Euclidean Algorithm
-    - [ ] Linear Diophantine Equations
-    - [ ] Fibonacci Numbers
+    - [x] Linear Diophantine Equations
+    - [x] Fibonacci Numbers
 * Prime numbers
     - [ ] Sieve of Eratosthenes
     - [ ] Sieve of Eratosthenes With Linear Time Complexity
