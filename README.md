@@ -9,7 +9,7 @@ https://cp-algorithms.com
     - [x] Linear Diophantine Equations
     - [x] Fibonacci Numbers
 * Prime numbers
-    - [ ] Sieve of Eratosthenes
+    - [x] Sieve of Eratosthenes
     - [ ] Sieve of Eratosthenes With Linear Time Complexity
     - [ ] Primality tests
     - [ ] Integer factorization
