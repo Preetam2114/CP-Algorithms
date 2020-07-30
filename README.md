@@ -10,8 +10,8 @@ https://cp-algorithms.com
     - [x] Fibonacci Numbers
 * Prime numbers
     - [x] Sieve of Eratosthenes
-    - [ ] Sieve of Eratosthenes With Linear Time Complexity
-    - [ ] Primality tests
+    - [x] Sieve of Eratosthenes With Linear Time Complexity
+    - [x] Primality tests
     - [ ] Integer factorization
 * Number-theoretic functions
     - [ ] Euler's totient function
