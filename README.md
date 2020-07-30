@@ -12,7 +12,7 @@ https://cp-algorithms.com
     - [x] Sieve of Eratosthenes
     - [x] Sieve of Eratosthenes With Linear Time Complexity
     - [x] Primality tests
-    - [ ] Integer factorization
+    - [x] Integer factorization
 * Number-theoretic functions
     - [ ] Euler's totient function
     - [ ] Number of divisors / sum of divisors
