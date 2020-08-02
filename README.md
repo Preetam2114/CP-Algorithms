@@ -14,7 +14,7 @@ https://cp-algorithms.com
     - [x] Primality tests
     - [x] Integer factorization
 * Number-theoretic functions
-    - [ ] Euler's totient function
+    - [x] Euler's totient function
     - [ ] Number of divisors / sum of divisors
 * Modular arithmetic
     - [ ] Modular Inverse
