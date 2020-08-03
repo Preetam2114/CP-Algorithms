@@ -15,7 +15,7 @@ https://cp-algorithms.com
     - [x] Integer factorization
 * Number-theoretic functions
     - [x] Euler's totient function
-    - [ ] Number of divisors / sum of divisors
+    - [x] Number of divisors / sum of divisors
 * Modular arithmetic
     - [ ] Modular Inverse
     - [ ] Linear Congruence Equation
