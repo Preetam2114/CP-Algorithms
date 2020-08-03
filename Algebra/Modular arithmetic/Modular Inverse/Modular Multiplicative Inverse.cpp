@@ -1,6 +1,6 @@
 /*
  * File: Modular Multiplicative Inverse
- * Algorithm: Modular arithmetic
+ * Algorithm: Modular Inverse
  * Created Date: Monday August 3rd 2020
  * Author: preetam rane
  */
