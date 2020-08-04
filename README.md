@@ -17,7 +17,7 @@ https://cp-algorithms.com
     - [x] Euler's totient function
     - [x] Number of divisors / sum of divisors
 * Modular arithmetic
-    - [ ] Modular Inverse
+    - [x] Modular Inverse
     - [ ] Linear Congruence Equation
     - [ ] Chinese Remainder Theorem
     - [ ] Factorial modulo p
