@@ -18,7 +18,7 @@ https://cp-algorithms.com
     - [x] Number of divisors / sum of divisors
 * Modular arithmetic
     - [x] Modular Inverse
-    - [ ] Linear Congruence Equation
+    - [x] Linear Congruence Equation
     - [ ] Chinese Remainder Theorem
     - [ ] Factorial modulo p
     - [ ] Discrete Log
