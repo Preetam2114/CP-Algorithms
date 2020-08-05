@@ -19,7 +19,7 @@ https://cp-algorithms.com
 * Modular arithmetic
     - [x] Modular Inverse
     - [x] Linear Congruence Equation
-    - [ ] Chinese Remainder Theorem
+    - [x] Chinese Remainder Theorem
     - [ ] Factorial modulo p
     - [ ] Discrete Log
     - [ ] Primitive Root
