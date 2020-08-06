@@ -1,114 +1,88 @@
 /*
- * File: Spoj - Power Modulo Inverted
+ * File: CodeChef - Inverse of a Function
  * Algorithm: Discrete Log
  * Created Date: Thursday August 6th 2020
  * Author: preetam rane
  */
 
 
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 
-#define MOD 123456
 using namespace std;
 
 typedef long long ll;
-const int HashMod=123456;
+const ll MOD=ll(1e9+7);
 
-struct node{
-	struct Line{int val,id,nex;}e[100000];
-	int h[HashMod],cnt;
-	void add(int x,int y,int k)
-	{
-		e[++cnt]=(Line){x,y,h[k]};
-		h[k]=cnt;
-	} 
-	void clear(){memset(h,-1,sizeof(h));cnt=0;} 
-	void insert(int x,int y)
-	{
-		int k=x%HashMod;
-		add(x,y,k);
-	}
-	int find(int x)
-	{
-		int k=x%HashMod;
-		for(int i=h[k];i!=-1;i=e[i].nex)
-			if(e[i].val==x)
-				return e[i].id;
+ll mult(ll a,ll b){
+    return (a*b)%MOD;
+}
+
+ll mypow(ll a,ll b){
+    if(b<=0) return 1;
+    ll res=1LL;
+    while(b){
+        if(b&1) res=mult(res,a);
+        a=mult(a,a);
+        b>>=1;
+    }
+    return res;
+}
+
+const int M=998244353, I2=499122177;
+string n;
+int x, m;
+
+ll bsgs(ll g, ll t, ll m) {
+	ll sp=1%m, pn=64-__builtin_clzll(m);
+	for(ll i=0; i<pn; ++i, sp=sp*g%m)
+		if(sp==t)
+			return i;
+	ll d=__gcd(sp, m);
+	if(__gcd(t, m)^d)
 		return -1;
-	}
-}Hash;
-
-int gcd(int a, int b) {
-    if (!a || !b)
-        return a | b;
-    unsigned shift = __builtin_ctz(a | b);
-    a >>= __builtin_ctz(a);
-    do {
-        b >>= __builtin_ctz(b);
-        if (a > b)
-            swap(a, b);
-        b -= a;
-    } while (b);
-    return a << shift;
-}
-
-ll qsm(ll a,ll b,ll p)
-{
-	ll t=1;
-	while(b>0)
-	{
-		if(b&1)
-		{
-			t=t*a%p;
-		}
-		a=a*a%p;
-		b>>=1;
-	}
-	return t%p;
-}
-
-int ex_BSGS(int a,int b,int p)
-{
-	if(b==1) return 0;
-	int k=0,ac=1;
-	while(1)
-	{
-		int d=gcd(a,p);
-		if(d==1) break;
-		if(b%d) return -1;
-		b/=d;p/=d;k++;
-		ac=1ll*ac*a/d%p;
-		if(b==ac)return k;
-	}
-	Hash.clear();
-	int m=sqrt(p)+1;
-	ll t=b;
-	for(int i=0;i<m;i++){
-		Hash.insert(t,i);
-		t=t*a%p;
-	}
-	ll tt=qsm(a,m,p);
-	t=ac*tt%p;
-	for(int i=1;i<=m;i++) 
-	{
-		int j=Hash.find(t);
-		t=t*tt%p;
-		if(j==-1) continue;
-		return i*m-j+k;
-	}
+	ll b=1, gp=g;
+	for(; b*b<m; ++b)
+		gp=gp*g%m;
+	unordered_map<ll, ll> mp;
+	for(ll i=1, p=t*g%m; i<=b; ++i, p=p*g%m)
+		mp[p]=i;
+	for(ll i=1, p=sp*gp%m; i<=b; ++i, p=p*gp%m)
+		if(mp.find(p)!=mp.end())
+			return i*b-mp[p]+pn;
 	return -1;
 }
 
-int main()
-{
-	int a,b,p;
-	while(scanf("%d%d%d",&a,&p,&b),a+b+p) 
-	{
-		int ans=ex_BSGS(a,b,p);
-		if(ans==-1) puts("No Solution");
-		else printf("%d\n",ans);
-	}
-	
-	return 0;
+ll pm(ll b, ll p, ll m) {
+	ll r=1;
+	for(; p; p/=2, b=b*b%m)
+		if(p&1)
+			r=r*b%m;
+	return r;
 }
 
+ll pm2(ll b, string p, ll m) {
+	ll r=1;
+	for(char c : p)
+		r=pm(r, 10, m)*pm(b, c-'0', m)%m;
+	return r;
+}
+
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	int t;
+	cin >> t;
+	while(t--){
+        cin >> n >> x >> m;
+        if(!x&&n!="1") {
+            cout << 1%m << "\n";
+            return 0;
+        }
+        ll b=(pm2(2, n, m)+m-1)%m, pc=bsgs(b, x, m);
+        if(pc<0) {
+            cout << "-1\n";
+            return 0;
+        }
+        cout << pm2(2, n, M)*I2%M*(pm(2, pc, M)+M-1)%M << "\n";
+    }
+}
