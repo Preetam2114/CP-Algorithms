@@ -76,12 +76,12 @@ int main() {
         cin >> n >> x >> m;
         if(!x&&n!="1") {
             cout << 1%m << "\n";
-            return;
+            return 0;
         }
         ll b=(pm2(2, n, m)+m-1)%m, pc=bsgs(b, x, m);
         if(pc<0) {
             cout << "-1\n";
-            return;
+            return 0;
         }
         cout << pm2(2, n, M)*I2%M*(pm(2, pc, M)+M-1)%M << "\n";
     }
