@@ -21,7 +21,7 @@ https://cp-algorithms.com
     - [x] Linear Congruence Equation
     - [x] Chinese Remainder Theorem
     - [x] Factorial modulo p
-    - [ ] Discrete Log
+    - [x] Discrete Log
     - [ ] Primitive Root
     - [ ] Discrete Root
     - [ ] Montgomery Multiplication
