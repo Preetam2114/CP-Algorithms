@@ -23,7 +23,7 @@ https://cp-algorithms.com
     - [x] Factorial modulo p
     - [x] Discrete Log
     - [x] Primitive Root
-    - [ ] Discrete Root
+    - [x] Discrete Root
     - [ ] Montgomery Multiplication
 * Number systems
     - [ ] Balanced Ternary
