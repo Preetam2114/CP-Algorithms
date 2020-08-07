@@ -24,7 +24,7 @@ https://cp-algorithms.com
     - [x] Discrete Log
     - [x] Primitive Root
     - [x] Discrete Root
-    - [ ] Montgomery Multiplication
+    - [x] Montgomery Multiplication
 * Number systems
     - [ ] Balanced Ternary
     - [ ] Gray code
