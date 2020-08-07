@@ -22,7 +22,7 @@ https://cp-algorithms.com
     - [x] Chinese Remainder Theorem
     - [x] Factorial modulo p
     - [x] Discrete Log
-    - [ ] Primitive Root
+    - [x] Primitive Root
     - [ ] Discrete Root
     - [ ] Montgomery Multiplication
 * Number systems
