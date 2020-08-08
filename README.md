@@ -26,7 +26,7 @@ https://cp-algorithms.com
     - [x] Discrete Root
     - [x] Montgomery Multiplication
 * Number systems
-    - [ ] Balanced Ternary
+    - [x] Balanced Ternary
     - [ ] Gray code
 * Miscellaneous
     - [ ] Enumerating submasks of a bitmask
